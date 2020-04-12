@@ -21,7 +21,7 @@ async function sentimentAnalysis (content){
         },
         body: JSON.stringify({"document":{"type":"PLAIN_TEXT","language": 'pt',"content":content},"encodingType": "UTF8"})
     }
-    const response = await fetch('https://language.googleapis.com/v1/documents:analyzeSentiment?key=AIzaSyA6_dG6U18K3ft_u1g_84h2AkUSJigGQXU', config)
+    const response = await fetch('https://language.googleapis.com/v1/documents:analyzeSentiment?key={ your key }', config)
     //const json = await response.json()
     if (response.ok) {
         //return json
@@ -43,7 +43,7 @@ async function sentimentAnalysis (content){
 async function pega2(){
     var scores = [] 
     var magnitude = []
-    var res = await fetch('https://www.googleapis.com/youtube/v3/commentThreads?part=snippet%2Creplies&videoId='+videoId+'&key=AIzaSyBRShWzWQI8X8b87zmw41tWD3320AprmsI');
+    var res = await fetch('https://www.googleapis.com/youtube/v3/commentThreads?part=snippet%2Creplies&videoId='+videoId+'&key={ your key }');
     var j = await res.json();
     var items = j.items
     console.log(items)
