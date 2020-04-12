@@ -1,4 +1,4 @@
-# sentimentanalysisyoutubecomments
+# Sentiment analysis on youtube comments
 This code uses youtube data api and google natural language api to do a sentiment analysis of the video based on the comments
 
 The video on how i built this is here: https://youtu.be/lw1A8iAF1rE
